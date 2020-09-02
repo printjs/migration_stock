@@ -9,7 +9,7 @@
 -- Be sure that ID and DESCRIPTION fields exist in
 -- BigInteger and String compatible fields respectively.
 
-CREATE TABLE ${changelog} (
+CREATE TABLE ${schema}.${changelog} (
     ID NUMERIC(20,0) NOT NULL,
     APPLIED_AT VARCHAR(25) NOT NULL,
     DESCRIPTION VARCHAR(255) NOT NULL,
@@ -19,4 +19,4 @@ CREATE TABLE ${changelog} (
 
 -- //@UNDO
 
-DROP TABLE ${changelog};
+DROP TABLE ${schema}.${changelog};
